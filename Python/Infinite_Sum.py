@@ -10,14 +10,14 @@ def sumNumbers():
   return totalSum
 
 while True:
-  numbers.append(int(input(f"{green}Digite um valor para ser somado:{reset} ")))
+  numbers.append(int(input(f"{green}Enter a value to be added:{reset} ")))
 
   if (0 in numbers):
     print("\n")
     numbers.pop() # Remove the last element from the array, which will be 0
     break
   else:
-    print(f"{warning}Caso queira parar de inserir números, digite 0{reset}")
+    print(f"{warning}If you want to stop inserting numbers, type 0{reset}")
     print("\n")
 
 print(sumNumbers())
